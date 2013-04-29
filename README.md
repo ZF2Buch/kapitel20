@@ -53,3 +53,16 @@ aus dem Addison-Wesley Verlag installieren Sie wie folgt:
   
 * Nun sollten Sie das Projekt unter http://luigis-pizza.local in Ihrem Browser 
   aufrufen können.
+
+Hinweise zum Zend Framework Release 2.1.5
+-----------------------------------------
+
+Durch Änderungen im Routing wird im User Modul leider eine Exception geworfen:
+
+* Route with name "user" does not have child routes
+   
+  Dies Problem tritt auf, weil an mehreren Stellen die Route "user/action" 
+  verwendet wird. Diese wird jedoch nicht in der module.config.php definiert. Es
+  gibt dort nur die "user" Route. Wird dies geändert, tritt der Bug nicht 
+  mehr auf.
+  
