@@ -20,11 +20,11 @@
 $this->headTitle('Anmelden');
 $this->pageTitle('Als Benutzer anmelden');
 
-$actionUrl = $this->url('user/action', array('action' => 'login'));
+$actionUrl = $this->url('user', array('action' => 'login'));
 
 echo $this->showForm($this->form, $actionUrl, 'form-horizontal');
 ?>
 <hr />
 <h3>Sie sind noch nicht angemeldet?</h3>
-<?php $url = $this->url('user/action', array('action' => 'register'))?>
+<?php $url = $this->url('user', array('action' => 'register'))?>
 <a href="<?php echo $url; ?>" class="btn">Jetzt registrieren</a>

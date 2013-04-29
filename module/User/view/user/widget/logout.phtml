@@ -27,7 +27,7 @@ use User\Entity\UserEntity;
 $user = $this->identity; /* @var $user UserEntity */
 
 // prepare form
-$actionUrl = $this->url('user/action', array('action' => 'logout'));
+$actionUrl = $this->url('user', array('action' => 'logout'));
 ?>
 <div class="well">
 <h4 class="pull-center">Sie sind angemeldet</h4>

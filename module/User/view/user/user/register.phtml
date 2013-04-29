@@ -21,11 +21,11 @@
 $this->headTitle('Registrieren');
 $this->pageTitle('Als neuer Benutzer registrieren');
 
-$actionUrl = $this->url('user/action', array('action' => 'register'));
+$actionUrl = $this->url('user', array('action' => 'register'));
 
 echo $this->showForm($this->form, $actionUrl, 'form-horizontal');
 ?>
 <hr />
 <h3>Sie sind schon registriert?</h3>
-<?php $url = $this->url('user/action', array('action' => 'login'))?>
+<?php $url = $this->url('user', array('action' => 'login'))?>
 <a href="<?php echo $url; ?>" class="btn">Jetzt anmelden</a>

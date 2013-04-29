@@ -67,7 +67,7 @@ class UserController extends AbstractActionController
         if (!$this->getUserService()->getAuthentication()->hasIdentity()) {
             // Redirect to login user
             return $this->redirect()->toRoute(
-                'user/action', array('action' => 'login')
+                'user', array('action' => 'login')
             );
         }
         
@@ -91,7 +91,7 @@ class UserController extends AbstractActionController
         
         // prepare Post/Redirect/Get Plugin
         $prg = $this->prg(
-            $this->url()->fromRoute('user/action', array('action' => 'login')), 
+            $this->url()->fromRoute('user', array('action' => 'login')), 
             true
         );
     
@@ -165,7 +165,7 @@ class UserController extends AbstractActionController
         
         // prepare Post/Redirect/Get Plugin
         $prg = $this->prg(
-            $this->url()->fromRoute('user/action', array('action' => 'register')), 
+            $this->url()->fromRoute('user', array('action' => 'register')), 
             true
         );
 
@@ -193,7 +193,7 @@ class UserController extends AbstractActionController
                 
                 // Redirect to login page
                 return $this->redirect()->toRoute(
-                    'user/action', array('action' => 'login')
+                    'user', array('action' => 'login')
                 );
             }
         }
