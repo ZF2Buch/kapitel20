@@ -63,7 +63,7 @@ $this->headScript()->appendFile(
 Die <strong>E-Mail-Adresse</strong> wird nicht ausgegeben.</p>
 <br />
 <?php 
-$actionUrl = $this->url('comment/action', array('action' => 'add'));
+$actionUrl = $this->url('comment', array('action' => 'add'));
 echo $this->showForm($this->commentForm, $actionUrl, 'form-horizontal');
 ?>
 </div>

@@ -21,7 +21,7 @@
 $this->headTitle('Über uns');
 $this->pageTitle('Luigis Pizza-Service stellt sich vor');
 
-$urlComment = $this->url('application/action', array(), array(), true);
+$urlComment = $this->url('application', array(), array(), true);
 ?>
 <?php if ($this->getHelperPluginManager()->has('commentShowLinks')) : ?>
 <?php echo $this->commentShowLinks($urlComment); ?>
