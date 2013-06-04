@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `comments` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
-INSERT INTO `comments` (`id`, `cdate`, `status`, `url`, `email`, `name`, `description`) VALUES
+INSERT INTO `comments` (`id`, `cdate`, `status`, `url`, `email`, `name`, `message`) VALUES
 (1,'2012-12-28 18:02:17','new','/about/team','luigi@luigis-pizza.de','Luigi','<p>Ich freue mich, dass ihr alle in unserem Team seid!</p>'),
 (2,'2013-01-01 15:55:14','new','/pizza/pizza-mexicana','horst@hat-hunger.de','Horst','<p>Liefert ihr auch heute an Neujahr?</p>'),
 (3,'2013-01-01 16:06:47','new','/pizza/pizza-mexicana','valentina@luigis-pizza.de','Valentina','<p>Ja klar, Horst, ruf einfach an und gib deine Bestellung auf.</p><p>Alessandro und ich warten schon!</p><p>:-x</p>'),
